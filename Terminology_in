@@ -1,0 +1,32 @@
+//HOISTING
+    //Mainly in functions
+    //in Javascript- line by line execution
+    //writing code in JS, so that compiler is used effectively, ie function calling or invoking comes before definition of the function, so that compiler
+    //has to move through the function body only once rather than more times
+
+//SCOPE
+    //GLOBAL -- accessible everywhere
+    //FUNCTION- accessible inside function only/ local variable of function
+    //BLOCK- accessible inside a block of code only --> like in 'for' or 'if', local variable of blocks
+
+    //SCOPE-CHAINING
+    //when more than 1 scope variables exist in the code and they interact
+    // OR when JS finds a variable accessible outside its actual scope (like using 'return' to access a block scope variable)
+    //ALSO when JS cannot find a variable in current scope, it searches for outer scope. This is also Scope-chain
+
+//SYNCHRONOUS CODE
+    //lets say for some reason, when interpretor reads lines of codes, there occurs a delay, but JS does not wait, but goes to the next line
+    //this returns opposite, athayath true avande edath false avum, ie by default JS is synchronous 
+    // to avoid this, JS can make us eof a hold to wait, till interpreter reads it fully --ASYNCHRONOUS CODING
+    //- AsYNCHRONOUS CODING METHODS
+        //1. callbacks -- oldest way, not in use now, not imp-- a function is passed as a parameter of another function
+        //when we do this a lot of times, there could be a point, where codes get stuck and fail -- this is call-back-hell/ dead lock situation
+        //2. promises
+        //action -- success/failure , ie action results in either success or failure
+        //THree states
+        // 1. Pending -event is in progress, adding process
+        // 2. fulfilled -- event is completed fully, when addition is complete
+        //3. rejected -- event is rejected/failed, when in case addition or the function fails
+
+        //3. async/await -- used in playwright-- waiting for a condition to be met, so that actions can be performed further
+        //async- waits for a promise n throws it,  await- handles the promise,
